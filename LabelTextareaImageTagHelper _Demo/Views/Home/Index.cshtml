@@ -1,0 +1,22 @@
+﻿@model LabelTextareaImageTagHelper__Demo.Models.Employee
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container py-4">
+    <form asp-action="Create" class="col-md-6">
+        <div class="form-group">
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Image" class="control-label"></label>
+            <img src="~/images/855211650_154321.jpg" asp-append-version="true" height="150" width="150" class="img-thumbnail" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Description" class="control-label"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+        </div>
+    </form>
+</div>
